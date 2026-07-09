@@ -1,0 +1,24 @@
+{
+  "name": "pennylane-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for PennyLane accounting API",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "pennylane-mcp": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.1.1",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0"
+  }
+}
